@@ -1,0 +1,25 @@
+<div class="relative">
+    <label class="flex top-0 left-0 p-1 transition-all duration-300 gap-3 items-center">
+        <img [src]="'assets/images/' + labelIcon">
+        <span class="font-dark-blue font-semibold font-size-11">{{label | translate}}</span>
+    </label>
+    <div class="border rounded-lg">
+        <p-dropdown [options]="options" [(ngModel)]="selectedOption" styleClass="h-8 p-x">
+            <ng-template pTemplate="selectedItem">
+                <div class="flex align-items-center gap-1" *ngIf="selectedOption">
+                    <img *ngIf="selectedOptionIcon" [src]="'assets/images/' + selectedOptionIcon" />
+                    <div class="font-dark-blue font-semibold font-size-11"
+                        [ngStyle]="{'color': selectedOption === 'Medium' ? 'green' : 'black'}">{{ selectedOption
+                        |translate }}</div>
+                </div>
+            </ng-template>
+            <ng-template let-option pTemplate="item">
+                <div class="flex align-items-center gap-1">
+                    <img *ngIf="selectedOptionIcon" [src]="'assets/images/' + selectedOptionIcon" />
+                    <div class="font-dark-blue font-semibold font-size-11"
+                        [ngStyle]="{'color': selectedOption === 'Medium' ? 'green' : 'black'}">{{ selectedOption
+                        |translate }}</div>
+                </div>
+            </ng-template>
+        </p-dropdown>
+    </div>

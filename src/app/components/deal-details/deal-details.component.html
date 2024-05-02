@@ -1,0 +1,25 @@
+<section class="bg-white p-3 rounded-lg flex flex-col gap-3.5" style="width: 432px; height: 297px;">
+
+    <header class="flex items-center gap-3">
+        <img src="assets/images/orange-rectangle.svg" alt="hello">
+        <h3 translate class="font-size-12 font-gray font-semibold">Deal details</h3>
+    </header>
+    <div class="flex gap-4">
+        <div class="flex-1">
+            <app-input [placeholder]="'Deal name'" [label]="'Deal name'" labelIcon="ticket.svg"></app-input>
+        </div>
+        <app-input [placeholder]="'Deal amount'" [label]="'Deal amount'" labelIcon="value.svg" prefix="L.E"></app-input>
+    </div>
+    <div>
+        <app-textarea [placeholder]="'Deal description'" [label]="'Deal description'"
+            labelIcon="description.svg"></app-textarea>
+    </div>
+    <div class="flex justify-between">
+        <app-dropdown label="Project" labelIcon="project.svg" [options]="['Customers complains']"
+            selectedOption="Customers complains" selectedOptionIcon="complains_icon.svg"></app-dropdown>
+        <app-dropdown label="Status" labelIcon="status.svg" [options]="['Negotiation phase']"
+            selectedOption="Negotiation phase"></app-dropdown>
+        <app-dropdown label="Priority" labelIcon="flag.svg" [options]="['Medium']" selectedOption="Medium"
+            selectedOptionIcon="green-flag.svg"></app-dropdown>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+{
+  "return request": "طلب ارجاع المخزون",
+  "Hello": "مرحبا",
+  "Deal details": "بيانات الصفقة",
+  "Deal name": "اسم الصفقة",
+  "Deal amount": "قيمة الصفقة",
+  "Deal description": "وصف الصفقة",
+  "L.E": "ج.م",
+  "Project": "المشروع",
+  "Customers complains": "شكاوى العملاء",
+  "Negotiation phase": "مرحلة التفاوض",
+  "Status": "الحالة",
+  "Priority": "الأولوية",
+  "Medium": "متوسطة",
+  "Products": "المنتجات",
+  "Add products here": "أضف المنتجات من هنا"
+}

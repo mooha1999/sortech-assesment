@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #f8f8f8 !important;
+}
+
+.bg-pale {
+  background-color: #f8f8f8;
+}
+
+body .p-dropdown .p-dropdown-trigger {
+  width: auto;
+  padding-inline-end: 3px;
+  padding-top: 3px;
+}
+
+body .p-dropdown .p-dropdown-label {
+  padding-inline-end: 10px;
+}
